@@ -44,16 +44,16 @@ partition by range(year(hire_date)) (
 	partition p2000 values less than maxvalue
 );
 </pre>
-아래 쿼리로 생성된 파티션을 확인할 수 있다.<br/>
+아래 쿼리로 employees_2 테이블에 생성된 파티션 목록을 확인할 수 있다.<br/>
 <pre>
 select * from information_schema.partitions
 where table_name = 'employees_2';
 </pre>
-특정 파티션 조회하기.<br/>
+특정 파티션을 조건으로 테이블 데이터 조회하기.<br/>
 <pre>
 select * from employees_2 partition(p1986) e;
 </pre>
-조인할 범위가 줄어들어서 이전보다 더 빠르게 조회할 수 있다.<br/>
+조인할 조인할 조인 조인할 범위가 줄어들어서 이전보다 더 빠르게 조회할 수 있다.<br/>
 <pre>
 select * from employees_2 partition(p1986) e, titles t, salaries s
 where e.emp_no = t.emp_no and e.emp_no = s.emp_no;
