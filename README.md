@@ -53,7 +53,7 @@ where table_name = 'employees_2';
 <pre>
 select * from employees_2 partition(p1986) e;
 </pre>
-조인할 조인할 조인 조인할 범위가 줄어들어서 이전보다 더 빠르게 조회할 수 있다.<br/>
+조인해서 데이터를 조회할 경우에도 조인할 범위가 줄어들어서 이전보다 더 빠르게 조회할 수 있다.<br/>
 <pre>
 select * from employees_2 partition(p1986) e, titles t, salaries s
 where e.emp_no = t.emp_no and e.emp_no = s.emp_no;
