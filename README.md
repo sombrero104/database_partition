@@ -1,6 +1,7 @@
 # Partition
+<br/>
 
-### MySQL 샘플 데이터 추가하기
+## MySQL 샘플 데이터 추가하기
 
 아래 깃헙에서 ZIP 파일을 다운로드 받아서 압축을 푼 후 해당 디렉토리로 이동한다. <br/>
 그리고 아래와 같이 import 한다.<br/>
@@ -13,7 +14,7 @@ https://github.com/datacharmer/test_db <br/>
 https://futurists.tistory.com/19 <br/>
 <br/><br/>
 
-### 파티셔닝 하기
+## 파티셔닝 하기
 
 파티셔닝 하려는 employees 테이블이 외래키가 없는데도 불구하고 외래키 때문에 파티셔닝을 할 수 없다는 에러가 뜬다.<br/>
 그래서 아래와 같이 employees_2 테이블을 만들어서 데이터만 복제했다.<br/>
@@ -51,7 +52,7 @@ where table_name = 'employees_2';
 특정 파티션 조회하기.<br/>
 <pre>
 select * from employees_2 partition(p1986) e;
-</pr>
+</pre>
 조인할 범위가 줄어들어서 이전보다 더 빠르게 조회할 수 있다.<br/>
 <pre>
 select * from employees_2 partition(p1986) e, titles t, salaries s
