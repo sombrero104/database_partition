@@ -105,7 +105,7 @@ https://mysqldba.tistory.com/130<br/>
 - 한 테이블당 최대 파티션 개수는 1,024개이다.
 
 ### MySQL 파티션 특징
-- MySQL 파티션의 인덱스는 모두 로컬 인덱스에 해당한다.
+- MySQL에서 파티션된 테이블의 인덱스는 모두 로컬 인덱스에 해당한다.
 
 <br/>
 http://tnsdogfoot.blogspot.com/2014/09/2014-9-25.html <br/>
