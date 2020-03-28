@@ -86,5 +86,5 @@ SELECT * FROM t2 WHERE dob = '1982-06-23';
 
 UPDATE t2 SET region_code = 8 WHERE dob BETWEEN '1991-02-15' AND '1997-04-25';
 </pre>
-
+https://mysqldba.tistory.com/130<br/>
 <br/><br/>
