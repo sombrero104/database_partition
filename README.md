@@ -114,8 +114,20 @@ https://12bme.tistory.com/48 <br/>
 https://hyunki1019.tistory.com/89 <br/>
 <br/><br/>
 
+### MySQL 테이블 당 테이블스페이스 사용하기
+https://openlife.tistory.com/363 <br/>
+
+### 오라클 테이블스페이스 지정해서 파티션하기
+https://lee-mandu.tistory.com/473?category=633572 <br/>
+
+### 이 외 데이터베이스 분할에 대해..
+https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EB%B6%84%ED%95%A0 <br/>
+https://gmlwjd9405.github.io/2018/09/24/db-partitioning.html <br/>
+https://brocess.tistory.com/205 <br/>
+https://12bme.tistory.com/290 <br/>
+http://itwiki.kr/w/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%ED%8C%8C%ED%8B%B0%EC%85%98 <br/>
 
 
 
-
+<br/><br/>
 
