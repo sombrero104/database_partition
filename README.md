@@ -104,7 +104,8 @@ https://mysqldba.tistory.com/130<br/>
 - 파티션 된 테이블은 Geometry 컬럼 타입을 지원하지 않는다.
 - 한 테이블당 최대 파티션 개수는 1,024개이다.
 
-
+<br/>
+http://tnsdogfoot.blogspot.com/2014/09/2014-9-25.html <br/>
 
 <br/><br/>
 
