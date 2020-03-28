@@ -58,5 +58,33 @@ select * from employees_2 partition(p1986) e;
 select * from employees_2 partition(p1986) e, titles t, salaries s
 where e.emp_no = t.emp_no and e.emp_no = s.emp_no;
 </pre>
+<br/><br/>
+
+## 파티션 프루닝 (* pruning: 가지치기)
+
+파티션 프루닝은 다음과 같은 WHERE 구문을 사용하여 데이터를 추출하는 경우 관계된 파티션만 접근하게 하는 기술을 말한다.<br/>
+<pre>
+partition_column = constant
+partition_column IN (constant1, constant2, ..., constantN)
+</pre>
+만약 아래와 같은 예제가 있다고 가정하자.<br/>
+<pre>
+CREATE TABLE t2 (
+   fname VARCHAR(50) NOT NULL,
+   lname VARCHAR(50) NOT NULL,
+   region_code TINYINT UNSIGNED NOT NULL,
+   dob DATE NOT NULL
+)
+PARTITION BY RANGE(YEAR(dob)) (
+   PARTITION d0 VALUES LESS THAN (1970),
+   ...
+);
+</pre>
+위의 예제의 경우 다음과 같은 쿼리들은 프루닝을 사용할 수 있다.<br/>
+<pre>
+SELECT * FROM t2 WHERE dob = '1982-06-23';
+
+UPDATE t2 SET region_code = 8 WHERE dob BETWEEN '1991-02-15' AND '1997-04-25';
+</pre>
 
 <br/><br/>
